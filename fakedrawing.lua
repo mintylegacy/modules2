@@ -210,7 +210,9 @@ function DrawingLib.new(drawingType)
                             textObj.Position
                     )
 
-                    textLabel.Position = UDim2fromOffset(position.X, position.Y)
+                    textLabel.TextXAlignment = (value and Enum.TextXAlignment.Center) or Enum.TextXAlignment.Left;
+
+                    --textLabel.Position = UDim2fromOffset(position.X, position.Y)
                 elseif index == "Outline" then
                     --uiStroke.Enabled = value
                     textStroke.Enabled = value;
