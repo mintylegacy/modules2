@@ -21,7 +21,7 @@ ScreenGui.Parent = CoreGui;
 local Toggles = {};
 local Options = {};
 
-local Fonts = loadstring(game:HttpGet('https://github.com/ipufo1/modules/blob/main/fonts.lua?raw=true'))('linoria-modded');
+local Fonts = loadstring(game:HttpGet('https://github.com/mintylegacy/modules2/blob/main/fonts.lua?raw=true'))('linoria-modded');
 local Library = {
     Toggled = false;
 
@@ -38,7 +38,7 @@ local Library = {
     RiskColor = Color3.fromRGB(255, 200, 69),
 
     Black = Color3.new(0, 0, 0);
-    Font = Fonts.Append('TahomaXP', game:HttpGet('https://github.com/ipufo1/modules/blob/main/TahomaXP.txt?raw=true')),
+    Font = Fonts.Append('TahomaXP', game:HttpGet('https://github.com/mintylegacy/modules2/blob/main/TahomaXP.txt?raw=true')),
 
     OpenedFrames = {};
     DependencyBoxes = {};
@@ -479,7 +479,7 @@ do
             Parent = ToggleLabel;
         });
 
-        -- Transparency image taken from https://github.com/matas3535/SplixPrivateDrawingLibrary/blob/main/Library.lua cus i'm lazy
+        -- Transparency image
         local CheckerFrame = Library:Create('ImageLabel', {
             BorderSizePixel = 0;
             Size = UDim2.new(0, 27, 0, 13);
