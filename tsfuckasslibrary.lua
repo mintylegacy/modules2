@@ -10,7 +10,7 @@ local LocalPlayer = cloneref(Players.LocalPlayer);
 local Mouse = cloneref(LocalPlayer:GetMouse());
 
 local wait = task.wait;
-local ProtectGui = protectgui or (syn and syn.protect_gui) or (function() end);
+local ProtectGui = protectgui or (crypt and crypt.protect_gui) or (function() end);
 
 local ScreenGui = Instance.new('ScreenGui');
 ProtectGui(ScreenGui);
@@ -1041,8 +1041,6 @@ do
         local ParentObj = self;
         local ToggleLabel = self.TextLabel;
         local Container = self.Container;
-
-        assert(Info.Default, 'AddKeyPicker: Missing default value.');
 
         local KeyPicker = {
             Value = Info.Default;
