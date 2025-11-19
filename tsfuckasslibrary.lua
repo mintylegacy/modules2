@@ -21,7 +21,7 @@ ScreenGui.Parent = CoreGui;
 local Toggles = {};
 local Options = {};
 
-local Fonts = loadstring(game:HttpGet('https://github.com/mintylegacy/modules2/blob/main/fonts.lua?raw=true'))('linoria-modded');
+local Fonts = loadstring(game:HttpGet('https://github.com/mintylegacy/modules2/blob/main/ProggyClean.txt'))('linoria-modded');
 local Library = {
     Toggled = false;
 
